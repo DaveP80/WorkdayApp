@@ -18,5 +18,6 @@ public class WorkdayApplication {
 		RosterService rosterService = context.getBean(RosterService.class);
 		Employee employee = rosterService.startShift();
 		rosterService.endShift(employee);
+		//how do we choose which bean to call, we now have 2 beans, manager and associate
 	}
 }
