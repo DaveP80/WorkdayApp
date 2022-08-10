@@ -23,13 +23,4 @@ public class RosterService {
 
     }
 
-    public void endShift(Employee employee) {
-
-        System.out.println(employee.getType().toString() + " with emp ID (#" + employee.getEmpNumber().toString() + ") has clocked out");
-
-
-    }
-
-
-
 }
