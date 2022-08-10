@@ -1,5 +1,6 @@
 package com.logic.demo;
 
+import com.logic.demo.model.Employee;
 import com.logic.demo.services.RosterService;
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
@@ -16,6 +17,7 @@ public class WorkdayApplication {
 		ApplicationContext context = SpringApplication.run(WorkdayApplication.class, args);
 
 		RosterService rosterService = context.getBean(RosterService.class);
-		rosterService.startShift();
+		Employee employee = rosterService.startShift();
+		rosterService.endShift(employee);
 	}
 }
