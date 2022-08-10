@@ -6,14 +6,11 @@ import org.springframework.stereotype.Service;
 
 import java.util.UUID;
 
-@Service
-public class StaffingProviderService {
+public interface StaffingProviderService {
 
-    public Employee getEmployee() {
-
-        return new Employee(EmpType.ASSOCIATE, UUID.randomUUID());
+   Employee getEmployee();
 
     }
 
 
-}
+

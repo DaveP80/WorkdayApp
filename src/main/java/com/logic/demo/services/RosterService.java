@@ -7,6 +7,8 @@ import org.springframework.stereotype.Service;
 @Service
 public class RosterService {
 
+    //spring will automatically look for beans that implement Staffing ProviderService
+
     private final StaffingProviderService staffingProviderService;
 
     @Autowired

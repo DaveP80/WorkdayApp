@@ -7,7 +7,6 @@ import org.springframework.boot.autoconfigure.SpringBootApplication;
 import org.springframework.context.ApplicationContext;
 
 
-
 //this app will have a couple enums, associate and manager, return
 //string of reporting their state, clockin in or working, or clocked out
 @SpringBootApplication
